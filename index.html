@@ -9,38 +9,47 @@
 </head>
     <body>
         <header>
-            <section>
-                <h1>Responsive Image Examples</h1>
+            <section class="grid-con center-grid-con">
+                <h1 class="col-span-full">Responsive Image Examples (Featuring Fribbit and Onyx)</h1>
             </section>
         </header>
     
-    <main>
-        <section class="grid-con center-grid-con">
+    <main class="grid-con center-grid-con">
+        <section class="col-span-full">
+            <h2>Picture Tag</h2>
             <picture>
-                <source srcset="images/training-sesh-1-1200" media="(min-width:1200px)">
-                <source srcset="images/training-sesh-1-768" media="(min-width:768px)">
-                <img src="images/training-sesh-1" alt="Two monks practicing punches">
+                <source srcset="images/training-sesh-1-1200.png" media="(min-width:1200px)">
+                <source srcset="images/training-sesh-1-768.png" media="(min-width:768px)">
+                <img src="images/training-sesh-1-300.png" alt="Two monks practicing punches">
             </picture>
         </section>
 
-
-
-        <section class="grid-con center-grid-con">
-            <div class="col-span-full">
-                <img sizes="(min-width: 1200px) 900px, (min-width:768px) 600px 100vw"
-        srcset="images/blood-orange_fhkwdw_c_scale,w_320.jpg 320w,
-        images/blood-orange_fhkwdw_c_scale,w_1111.jpg 1111w,
-    images/blood-orange_fhkwdw_c_scale,w_1659.jpg 1659w,
-    images/blood-orange_fhkwdw_c_scale,w_1800.jpg 1800w"
-    src="images/blood-orange_fhkwdw_c_scale,w_1800.jpg"> 
-            </div>
+        <section class="col-span-full">
+            <h2>Img tag and srcset attributes</h2>
+            <img sizes="(max-width: 1200px) 100vw, 1200px"
+            srcset="
+            images/training-sesh-2-1200_pe1cxc_c_scale,w_200.png 200w,
+            images/training-sesh-2-1200_pe1cxc_c_scale,w_493.png 493w,
+            images/training-sesh-2-1200_pe1cxc_c_scale,w_698.png 698w,
+            images/training-sesh-2-1200_pe1cxc_c_scale,w_870.png 870w,
+            images/training-sesh-2-1200_pe1cxc_c_scale,w_1024.png 1024w,
+            images/training-sesh-2-1200_pe1cxc_c_scale,w_1163.png 1163w,
+            images/training-sesh-2-1200_pe1cxc_c_scale,w_1200.png 1200w"
+            src="images/training-sesh-2-1200_pe1cxc_c_scale,w_1200.png"
+            alt="Onyx carries a giant rock while Fribbit sits on top of the giant rock and lifts a slightly tinier rock">
         </section>
+
+
+        <section class="col-span-full">
+            <h2>Background Attribute in CSS</h2>
+            <div id="bg-image"></div>
+         </section>
 
     </main>
     
-    <footer class="grid-con center-grid-con">
+    <footer class="grid-con center-grid-con" id="footer">
         <h2 class="visually-hidden">Footer</h2>
-            <p class="col-span-full">StrifePainter 2026</p>
+            <p class="col-span-full">©StrifePainter 2026</p>
     </footer>
     
     <script src="js/script.js"></script>
