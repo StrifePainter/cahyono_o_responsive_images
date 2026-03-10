@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/grid.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <title>Assignment 3 - Responsive Image Sizing</title>
+</head>
+    <body>
+        <header>
+            <section>
+                <h1>Responsive Image Examples</h1>
+            </section>
+        </header>
+    
+    <main>
+        <section class="grid-con center-grid-con">
+            <picture>
+                <source srcset="images/training-sesh-1-1200" media="(min-width:1200px)">
+                <source srcset="images/training-sesh-1-768" media="(min-width:768px)">
+                <img src="images/training-sesh-1" alt="Two monks practicing punches">
+            </picture>
+        </section>
+
+
+
+        <section class="grid-con center-grid-con">
+            <div class="col-span-full">
+                <img sizes="(min-width: 1200px) 900px, (min-width:768px) 600px 100vw"
+        srcset="images/blood-orange_fhkwdw_c_scale,w_320.jpg 320w,
+        images/blood-orange_fhkwdw_c_scale,w_1111.jpg 1111w,
+    images/blood-orange_fhkwdw_c_scale,w_1659.jpg 1659w,
+    images/blood-orange_fhkwdw_c_scale,w_1800.jpg 1800w"
+    src="images/blood-orange_fhkwdw_c_scale,w_1800.jpg"> 
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="grid-con center-grid-con">
+        <h2 class="visually-hidden">Footer</h2>
+            <p class="col-span-full">StrifePainter 2026</p>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
